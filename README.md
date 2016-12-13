@@ -94,7 +94,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    public function usersJsonAction(Competition $competition, Request $request)
+    public function usersJsonAction(Request $request)
     {
         $dataTablesRequest = new \DataTablesBundle\Request\Request($request->query->all());
         $srv = $this->get('datatables.users');
